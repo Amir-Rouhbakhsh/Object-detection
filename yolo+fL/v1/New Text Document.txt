@@ -1,0 +1,66 @@
+first start server.py  then run_client_0.py   then run_client_1
+
+
+& C:/Users/PC/anaconda3/python.exe c:/Users/PC/Desktop/dentalresearch/models/federated/flcodes/server.py
+
+
+& C:/Users/PC/anaconda3/python.exe c:/Users/PC/Desktop/dentalresearch/models/federated/flcodes/run_client_0.py
+
+
+& C:/Users/PC/anaconda3/python.exe c:/Users/PC/Desktop/dentalresearch/models/federated/flcodes/run_client_1.py
+
+
+python client.py
+
+
+& C:/Users/PC/anaconda3/python.exe c:/Users/PC/Desktop/dentalresearch/models/federated/flcodes/client.py
+
+
+
+If you are using PowerShell (what you are using now)
+$env:CLIENT_ID=0
+python client.py
+
+
+For client 1:
+
+$env:CLIENT_ID=1
+python client.py
+
+
+
+
+If you are using Command Prompt (cmd.exe)
+set CLIENT_ID=0
+python client.py
+
+
+For client 1:
+
+set CLIENT_ID=1
+python client.py
+
+//////////////////////////////////////////////////////////////////////////////////////
+status=Status(code=Code.OK, message="Success"),
+clean_start.py
+
+& C:/Users/PC/anaconda3/python.exe c:/Users/PC/Desktop/dentalresearch/models/federated/flcodes/clean_start.py
+
+
+
+
+
+
+
+& C:/Users/PC/anaconda3/python.exe c:/Users/PC/Desktop/dentalresearch/models/federated/flcodes/server.py
+
+$env:CLIENT_ID=0
+& C:/Users/PC/anaconda3/python.exe c:/Users/PC/Desktop/dentalresearch/models/federated/flcodes/client.py
+
+
+
+
+$env:CLIENT_ID=1
+& C:/Users/PC/anaconda3/python.exe c:/Users/PC/Desktop/dentalresearch/models/federated/flcodes/client.py
+
+
